@@ -4,7 +4,7 @@ import ctypes
 from ctypes import wintypes
 import struct
 import psutil
-#охх блять как же я заебалмя эту хуйню делать блять...
+#охх блять как же я заебался эту хуйню делать блять...
 # Настройка WinAPI
 kernel32 = ctypes.WinDLL('kernel32', use_last_error=True)
 OpenProcess = kernel32.OpenProcess
