@@ -4,7 +4,7 @@ import ctypes
 from ctypes import wintypes
 import struct
 import psutil
-
+#охх блять как же я заебалмя эту хуйню делать блять...
 # Настройка WinAPI
 kernel32 = ctypes.WinDLL('kernel32', use_last_error=True)
 OpenProcess = kernel32.OpenProcess
@@ -113,7 +113,7 @@ class GameCheatGUI:
         main_frame = ttk.Frame(self.root)
         main_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
 
-        # Список процессов
+        # Список процессов ну типа показывает скок всего процессов вроде норм сделал
         self.process_list = ttk.Treeview(main_frame, columns=('pid', 'name'), show='headings')
         self.process_list.heading('pid', text='PID')
         self.process_list.heading('name', text='Process Name')
